@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>First Meeting Minutes</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="First Meeting Minutes Assignment">
+    <meta name="keywords" content="HTML">
+    <meta name="author" content="Aleksa Stamenkovic">
+</head>
+
+<body>
+    <section>
+        <header>
+            <h1>Meeting Minutes</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#attendance"><button>Attendance List</button></a></li>
+                <li><a href="#agenda"><button>Meeting Agenda</button></a></li>
+                <li><a href="#old-business"><button>Last Meeting Business</button></a></li>
+                <li><a href="#new-business"><button>This Meeting Business</button></a></li>
+                <li><a href="#graph"><button>Presentation Slide</button></a></li>
+            </ul>
+        </nav>
+    </section>
+    <hr>
+    <seciton>
+        <h3>Meet Topic: <em>Kickoff Meeting</em></h3>
+        <h3>Date: <em>10/03/2022</em></h3>
+        <h3>Time: <em>4:30PM</em></h3>
+        <fieldset>
+            <legend>Check In From</legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="first-name" name="first-name"><br><br>
+            <label for="last-name">Last name:</label>
+            <input type="text" id="last-name" name="last-name"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <label for="cars">Choose a field:</label>
+            <select id="cars">
+                <option value="hr">Engineering</option>
+                <option value="eng">Human Resources</option>
+            </select><br><br>
+            <label for="languages">Choose your browser from the list:</label>
+            <input list="languages" name="browlanguagesser" id="browser">
+            <datalist id="languages">
+                <option value="Javascript">
+                <option value="Java">
+                <option value="Python">
+                <option value="C++">
+            </datalist><br><br>
+            <input type="submit" value="Check In">
+        </fieldset>
+        </form>
+        <hr>
+        <div id="attendance">
+            <h3>Attendance List:</h3>
+            <form>
+                <input type="checkbox" id="name1" name="name1" value="Aleksa Stamenkovic">
+                <label for="name1">Aleksa Stamenkovic</label><br>
+                <input type="checkbox" id="name2" name="name2" value="Bill Gates">
+                <label for="name2">Bill Gates</label><br>
+                <input type="checkbox" id="name3" name="name3" value="Jeff Bezos">
+                <label for="name3">Jeff Bezos</label><br>
+                <input type="checkbox" id="name4" name="name4" value="Elon Musk">
+                <label for="name4">Elon Musk</label><br><br>
+                <input type="submit" value="Submit Attendance">
+            </form>
+        </div>
+        <div id="agenda">
+            <h3>Meeting Agenda</h3>
+            <ol>
+                <li>Meet <b>eveyone</b></li>
+                <li>Gain information on each teammate's knowledge</li>
+                <li><strong>Discuss meeting times</strong></li>
+            </ol>
+        </div>
+        <div id="old-business">
+            <h3>Unfinished Business From Last Meeting</h3>
+            <span>
+                Notes:
+            </span>
+            <span>
+                <i>Remind everyone to fill out the survey.</i>
+            </span>
+        </div>
+        <div id="new-business">
+            <h3>New Business For This Meeting</h3>
+            <textarea id="w3review" name="w3review" rows="10" cols="80">Add Meeting Notes Here:</textarea>
+        </div>
+        <div id="graph">
+            <h3>Presentation Slide</h3>
+            <img src="Change-Curve.jpg" alt="Graph">
+        </div>
+    </seciton>
+    <br>
+    <hr>
+    <section>
+        <footer>
+            Author: <details>
+                <summary>Aleksa Stamenkovic</summary>
+                <p>Hey there! I am a senior standing CS student at UCSD. Check out my <a
+                        href="https://github.com/a-stam" target="_blank">GitHub</a>.</p>
+            </details>
+        </footer>
+    </section>
+</body>
+
+</html>
