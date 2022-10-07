@@ -21,6 +21,8 @@
                 <li><a href="#old-business"><button>Last Meeting Business</button></a></li>
                 <li><a href="#new-business"><button>This Meeting Business</button></a></li>
                 <li><a href="#graph"><button>Presentation Slide</button></a></li>
+                <li><a href="#audio"><button>Presentation Audio</button></a></li>
+                <li><a href="#video"><button>Team Video</button></a></li>
             </ul>
         </nav>
     </section>
@@ -30,7 +32,7 @@
         <h3>Date: <em>10/03/2022</em></h3>
         <h3>Time: <em>4:30PM</em></h3>
         <fieldset>
-            <legend>Check In From</legend>
+            <legend>Check In Form</legend>
             <label for="fname">First name:</label>
             <input type="text" id="first-name" name="first-name"><br><br>
             <label for="last-name">Last name:</label>
@@ -89,13 +91,29 @@
             <h3>New Business For This Meeting</h3>
             <textarea id="w3review" name="w3review" rows="10" cols="80">Add Meeting Notes Here:</textarea>
         </div>
+        <hr>
         <div id="graph">
             <h3>Presentation Slide</h3>
-            <img src="Change-Curve.jpg" alt="Graph">
+            <img src="Change-Curve.jpg" alt="Graph" width=600>
         </div>
+        <div id="audio">
+            <h3>Presentation Audio</h3>
+            <audio controls
+                src="Meeting Minutes Recording.m4a">
+            </audio>
+        </div>
+        <div id="video">
+            <h3>Team Video</h3>
+            <video controls width="600">
+                <source src="Team.mp4"
+                        type="video/mp4">
+                </video>
+            </audio>
+        </div>
+        <hr>
+        <div
     </seciton>
     <br>
-    <hr>
     <section>
         <footer>
             Author: <details>
