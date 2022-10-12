@@ -20,20 +20,20 @@
     <div id="main-container">
       <div class="sticky" id="header">
         <h1>Meeting Minutes</h1>
+        <nav style="position:relative;">
+            <ul id="table-content">
+              <li class="content-element"><a href="#attendance">Attendance List</a></li>
+              <li class="content-element"><a href="#agenda">Meeting Agenda</a></li>
+              <li class="content-element"><a href="#old-business">Last Meeting Business</a></li>
+              <li class="content-element"><a href="#new-business">This Meeting Business</a></li>
+              <li class="content-element"><a href="#graph">Presentation Slide</a></li>
+              <li class="content-element"><a href="#audio">Presentation Audio</a></li>
+              <li class="content-element"><a href="#video">Team Video</a></li>
+            </ul>
+          </nav>
       </div>
 
       <section>
-        <nav>
-          <ul>
-            <li><a href="#attendance">Attendance List</a></li>
-            <li><a href="#agenda">Meeting Agenda</a></li>
-            <li><a href="#old-business">Last Meeting Business</a></li>
-            <li><a href="#new-business">This Meeting Business</a></li>
-            <li><a href="#graph">Presentation Slide</a></li>
-            <li><a href="#audio">Presentation Audio</a></li>
-            <li><a href="#video">Team Video</a></li>
-          </ul>
-        </nav>
       </section>
       <hr />
       <main>
@@ -53,7 +53,7 @@
             <option value="hr">Engineering</option>
             <option value="eng">Human Resources</option></select
           ><br /><br />
-          <label for="browser">Choose your browser from the list:</label>
+          <label for="browser">Choose your language from the list:</label>
           <input list="languages" name="languages" id="browser" />
           <datalist id="languages">
             <option value="Javascript"></option>
@@ -100,7 +100,7 @@
         </div>
         <div id="new-business">
           <h3>New Business For This Meeting</h3>
-          <textarea id="w3review" name="w3review" rows="10" cols="80">
+          <textarea id="w3review" name="w3review">
 Add Meeting Notes Here:</textarea
           >
         </div>
