@@ -1,0 +1,31 @@
+@font-face {
+  font-family: raleway;
+  src: url("Raleway-VariableFont_wght.ttf") format("truetype");
+}
+
+section {
+  overflow: hidden;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+#main-container {
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 1em;
+    background-color: rgb(248,248,248);
+}
+
+#header {
+  border-style: transparent;
+  border-width: 1px;
+  border-radius: 3px;
+  background-color: turquoise;
+  text-align: center;
+  padding: 1px;
+}
+
