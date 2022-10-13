@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="style.css"
   </head>
 
+  <!-- internal css -->
   <style>
     body {
       padding: 1em;
-      font-family: raleway;
+      font-family: raleway; /* font registered in the external css */
     }
   </style>
 
@@ -137,26 +138,31 @@
           </div>
         </div>
         <hr />
-        <h3 style="align-self: center;">Presentation Slide and Video</h3>
+        <h3>Presentation Slide and Video</h3>
         <div id="videograph">
-          <video width=40% id="video" controls>
-            <source src="Team.mp4" type="video/mp4" />
+          <video width="40%" id="video" controls>
+            <source src="/assets/Team.mp4" type="video/mp4" />
           </video>
-          <img id="graph" src="Change-Curve.jpg" alt="Graph"/>
+          <img id="graph" src="/assets/Change-Curve.jpg" alt="Graph" />
         </div>
         <div id="audio">
           <h3>Presentation Audio</h3>
-          <audio style="width:100%" controls src="Meeting-Minutes-Recording.m4a"></audio>
+          <!-- inline CSS set width to 100% of the audio div -->
+          <audio
+            style="width: 100%"
+            controls
+            src="/assets/Meeting-Minutes-Recording.m4a"
+          ></audio>
         </div>
         <p id="hidden-p">Hi I'm hidding</p>
         <hr />
       </main>
       <br />
-      <section>
+      <section id="footer-section" class="sticky">
         <footer>
           Author:
           <details>
-            <summary><button>Aleksa Stamenkovic</button></summary>
+            <summary>Aleksa Stamenkovic</summary>
             <p>
               Hey there! I am a senior standing CS student at UCSD. Check out my
               <a href="https://github.com/a-stam" target="_blank">GitHub</a>.

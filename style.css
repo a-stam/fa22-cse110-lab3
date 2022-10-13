@@ -1,19 +1,19 @@
 /* import raleway font familiy from local ttf file */
 @font-face {
   font-family: raleway;
-  src: url("Raleway-VariableFont_wght.ttf") format("truetype");
+  src: url("/assets/Raleway-VariableFont_wght.ttf") format("truetype");
 }
 
- /* change background if width of screen is less then 600 */
+/* change background if width of screen is less then 600 */
 @media only screen and (max-width: 600px) {
   body {
-    background-color: green; 
+    background-color: green;
   }
 }
 
 * em,
 i {
-  color: blue;  /* color of all italic or em elements is blue */
+  color: blue; /* color of all italic or em elements is blue */
 }
 
 button:hover {
@@ -25,12 +25,12 @@ section {
 }
 
 li > a {
-  text-decoration: none;  /* gets rid of the underlined style */
-  color: #000000;       /* sets text color to black */
+  text-decoration: none; /* gets rid of the underlined style */
+  color: #000000; /* sets text color to black */
 }
 
 li > a:active {
-  color: red;           /* while pressing the link in the list it will be red */
+  color: red; /* while pressing the link in the list it will be red */
 }
 
 /* sets minimum size of the submit attendance button */
@@ -45,56 +45,55 @@ textarea {
   height: 200px;
 }
 
-
 #table-content {
-  display: flex;          /* display children in flex format */
-  flex-direction: row;    /* display then in the row direction (<---->) */
-  flex-wrap: wrap;        /* wrap to next line if cannot fix */
-  text-decoration: none;  /* remove the default of the list */
+  display: flex; /* display children in flex format */
+  flex-direction: row; /* display then in the row direction (<---->) */
+  flex-wrap: wrap; /* wrap to next line if cannot fix */
+  text-decoration: none; /* remove the default of the list */
 }
 
-#grid-container { 
-  display: grid;          /* use grid to position children */
-  grid-template-columns: [col1] 30% [col2] auto [col-end];                              /* two colmns in the grid with 30% and 70% widths */
-  grid-template-rows: [row1] 100px [row2] 100px [row3] 100px [row4] 100px [row-end];    /* four rows in the grid */
+#grid-container {
+  display: grid; /* use grid to position children */
+  grid-template-columns: [col1] 30% [col2] auto [col-end]; /* two colmns in the grid with 30% and 70% widths */
+  grid-template-rows: [row1] 100px [row2] 100px [row3] 100px [row4] 100px [row-end]; /* four rows in the grid */
 }
 
 #attendance {
-  grid-column-start: col1;      /* start from first column */
-  grid-column-end: span col2;   /* end before second column */
-  grid-row-start: row1;         /* start from first row */
-  grid-row-end: span row3;      /* end before third row */
+  grid-column-start: col1; /* start from first column */
+  grid-column-end: span col2; /* end before second column */
+  grid-row-start: row1; /* start from first row */
+  grid-row-end: span row3; /* end before third row */
 }
 
 #agenda {
-  grid-column-start: col1;      /* start from first column */
-  grid-column-end: span col2;   /* end before second column */
-  grid-row-start: row3;         /* start from third row */
-  grid-row-end: span row-end;   /* end at last row */
+  grid-column-start: col1; /* start from first column */
+  grid-column-end: span col2; /* end before second column */
+  grid-row-start: row3; /* start from third row */
+  grid-row-end: span row-end; /* end at last row */
 }
 
-#old-business {               
-  grid-column-start: col3;        /* start from third column */
-  grid-column-end: span col-end;  /* end at last column */
-  grid-row-start: row1;           /* start from first row */
-  grid-row-end: span row2;        /* end before second row */
+#old-business {
+  grid-column-start: col3; /* start from third column */
+  grid-column-end: span col-end; /* end at last column */
+  grid-row-start: row1; /* start from first row */
+  grid-row-end: span row2; /* end before second row */
 }
 
 #new-business {
-  grid-column-start: col3;        /* start from third column */
-  grid-column-end: span col-end;  /* end at last column */
-  grid-row-start: row2;           /* start from second row */
-  grid-row-end: span row-end;     /* end at last row */
+  grid-column-start: col3; /* start from third column */
+  grid-column-end: span col-end; /* end at last column */
+  grid-row-start: row2; /* start from second row */
+  grid-row-end: span row-end; /* end at last row */
 }
 
 .content-element {
-  display: inline-block;          /* display as blocks that are in line */
-  list-style: none;               /* remove list styling */
-  margin: auto;                   /* automatic margins areound the elements */
-  border-radius: 3px;             /* round the borders */
-  background-color: hsla(39, 21%, 0%, 0.05);  /* custom background color */
+  display: inline-block; /* display as blocks that are in line */
+  list-style: none; /* remove list styling */
+  margin: auto; /* automatic margins areound the elements */
+  border-radius: 3px; /* round the borders */
+  background-color: hsla(39, 21%, 0%, 0.05); /* custom background color */
   /* set each padding (space between border and child elements) individualy */
-  padding-top: 2px;              
+  padding-top: 2px;
   padding-bottom: 2px;
   padding-left: 2px;
   padding-right: 2px;
@@ -107,43 +106,57 @@ div.sticky {
   top: 1em;
 }
 
-
 .a[href="https://github.com/a-stam"]
 {
-  color: purple;      /* element with such href attribute will be purple */
+  color: purple; /* element with such href attribute will be purple */
 }
 
 #videograph {
-  display: flex;                    /* display as flex */
-  justify-content: space-evenly;    /* horizontally position them evenly */
-  align-items: center;              /* vertically place them on the middle axis */
+  display: flex; /* display as flex */
+  justify-content: space-evenly; /* horizontally position them evenly */
+  align-items: center; /* vertically place them on the middle axis */
 }
 
-video + img{
-  width: 40%;     /* image after video will have 40% width */
+video + img {
+  width: 40%; /* image after video will have 40% width */
 }
 
 img ~ div {
-  width: 100%     /* all divs after the image will have 100% width */
+  width: 100%; /* all divs after the image will have 100% width */
 }
 
 #main-container {
-  border: 1px solid;                        /* border of the main container on the page */
-  border-radius: 3px;                       /* border curved edges */
-  padding: 1em;                             /* room within the borders of the element */
-  background-color: rgb(248, 248, 248);   /* custom background */
+  border: 1px solid; /* border of the main container on the page */
+  border-radius: 3px; /* border curved edges */
+  padding: 1em; /* room within the borders of the element */
+  background-color: rgb(248, 248, 248); /* custom background */
 }
 
-
 #hidden-p {
-  display: none;  /* hide the secret element */
+  display: none; /* hide the secret element */
 }
 
 #header {
-  border-style: transparent;      /* don't show the border */
-  border-width: 1px;              /* 1px slim border */
-  border-radius: 3px;             /* border curved at level of 3px */
-  background-color: turquoise;  /* set the background color */
-  text-align: center;             /* horizontaly center align all text in the header */
-  padding: 1px 1px 10px 1px;      /* all custom padding setting */
+  border-style: transparent; /* don't show the border */
+  border-width: 1px; /* 1px slim border */
+  border-radius: 3px; /* border curved at level of 3px */
+  background-color: turquoise; /* set the background color */
+  text-align: center; /* horizontaly center align all text in the header */
+  padding: 1px 1px 10px 1px; /* all custom padding setting */
+}
+
+/* sticky footer */
+#footer-section {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0; /* stick to the bottom of the screen */
+}
+
+footer {
+  border-style: transparent; /* don't show the border */
+  border-width: 1px; /* 1px slim border */
+  border-radius: 3px; /* border curved at level of 3px */
+  background-color: turquoise; /* set the background color */
+  min-height: 5vh; /* set minimum height */
+  padding: 1rem; /* all custom padding setting */
 }
