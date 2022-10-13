@@ -107,7 +107,11 @@
                 value="Elon Musk"
               />
               <label for="name4">Elon Musk</label><br /><br />
-              <input type="submit" value="Submit Attendance" id="submit-attendance" />
+              <input
+                type="submit"
+                value="Submit Attendance"
+                id="submit-attendance"
+              />
             </form>
           </div>
           <div id="agenda">
@@ -133,20 +137,18 @@
           </div>
         </div>
         <hr />
-        <div id="graph">
-          <h3>Presentation Slide</h3>
-          <img src="Change-Curve.jpg" alt="Graph" width="600" />
+        <h3 style="align-self: center;">Presentation Slide and Video</h3>
+        <div id="videograph">
+          <video width=40% id="video" controls>
+            <source src="Team.mp4" type="video/mp4" />
+          </video>
+          <img id="graph" src="Change-Curve.jpg" alt="Graph"/>
         </div>
         <div id="audio">
           <h3>Presentation Audio</h3>
-          <audio controls src="Meeting-Minutes-Recording.m4a"></audio>
+          <audio style="width:100%" controls src="Meeting-Minutes-Recording.m4a"></audio>
         </div>
-        <div id="video">
-          <h3>Team Video</h3>
-          <video controls width="600">
-            <source src="Team.mp4" type="video/mp4" />
-          </video>
-        </div>
+        <p id="hidden-p">Hi I'm hidding</p>
         <hr />
       </main>
       <br />
