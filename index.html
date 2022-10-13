@@ -20,21 +20,32 @@
     <div id="main-container">
       <div class="sticky" id="header">
         <h1>Meeting Minutes</h1>
-        <nav style="position:relative;">
-            <ul id="table-content">
-              <li class="content-element"><a href="#attendance">Attendance List</a></li>
-              <li class="content-element"><a href="#agenda">Meeting Agenda</a></li>
-              <li class="content-element"><a href="#old-business">Last Meeting Business</a></li>
-              <li class="content-element"><a href="#new-business">This Meeting Business</a></li>
-              <li class="content-element"><a href="#graph">Presentation Slide</a></li>
-              <li class="content-element"><a href="#audio">Presentation Audio</a></li>
-              <li class="content-element"><a href="#video">Team Video</a></li>
-            </ul>
-          </nav>
+        <nav style="position: relative">
+          <ul id="table-content">
+            <li class="content-element">
+              <a href="#attendance">Attendance List</a>
+            </li>
+            <li class="content-element">
+              <a href="#agenda">Meeting Agenda</a>
+            </li>
+            <li class="content-element">
+              <a href="#old-business">Last Meeting Business</a>
+            </li>
+            <li class="content-element">
+              <a href="#new-business">This Meeting Business</a>
+            </li>
+            <li class="content-element">
+              <a href="#graph">Presentation Slide</a>
+            </li>
+            <li class="content-element">
+              <a href="#audio">Presentation Audio</a>
+            </li>
+            <li class="content-element"><a href="#video">Team Video</a></li>
+          </ul>
+        </nav>
       </div>
 
-      <section>
-      </section>
+      <section></section>
       <hr />
       <main>
         <h2>Meet Topic: <em>Kickoff</em> Meeting</h2>
@@ -64,45 +75,62 @@
           <input type="submit" value="Check In" />
         </fieldset>
         <hr />
-        <div id="attendance">
-          <h3>Attendance List:</h3>
-          <form>
-            <input
-              type="checkbox"
-              id="name1"
-              name="name1"
-              value="Aleksa Stamenkovic"
-            />
-            <label for="name1">Aleksa Stamenkovic</label><br />
-            <input type="checkbox" id="name2" name="name2" value="Bill Gates" />
-            <label for="name2">Bill Gates</label><br />
-            <input type="checkbox" id="name3" name="name3" value="Jeff Bezos" />
-            <label for="name3">Jeff Bezos</label><br />
-            <input type="checkbox" id="name4" name="name4" value="Elon Musk" />
-            <label for="name4">Elon Musk</label><br /><br />
-            <input type="submit" value="Submit Attendance" />
-          </form>
-        </div>
-        <div id="agenda">
-          <h3>Meeting Agenda</h3>
-          <ol>
-            <li>Meet <b>eveyone</b></li>
-            <li>Gain information on each teammate's knowledge</li>
-            <li><strong>Discuss meeting times</strong></li>
-          </ol>
-        </div>
-        <div id="old-business">
-          <h3>Unfinished Business From Last Meeting</h3>
-          <span> Notes: </span>
-          <span>
-            <i>Remind everyone to fill out the survey.</i>
-          </span>
-        </div>
-        <div id="new-business">
-          <h3>New Business For This Meeting</h3>
-          <textarea id="w3review" name="w3review">
-Add Meeting Notes Here:</textarea
-          >
+        <div id="grid-container">
+          <div id="attendance">
+            <h3>Attendance List:</h3>
+            <form>
+              <input
+                type="checkbox"
+                id="name1"
+                name="name1"
+                value="Aleksa Stamenkovic"
+              />
+              <label for="name1">Aleksa Stamenkovic</label><br />
+              <input
+                type="checkbox"
+                id="name2"
+                name="name2"
+                value="Bill Gates"
+              />
+              <label for="name2">Bill Gates</label><br />
+              <input
+                type="checkbox"
+                id="name3"
+                name="name3"
+                value="Jeff Bezos"
+              />
+              <label for="name3">Jeff Bezos</label><br />
+              <input
+                type="checkbox"
+                id="name4"
+                name="name4"
+                value="Elon Musk"
+              />
+              <label for="name4">Elon Musk</label><br /><br />
+              <input type="submit" value="Submit Attendance" id="submit-attendance" />
+            </form>
+          </div>
+          <div id="agenda">
+            <h3>Meeting Agenda</h3>
+            <ol>
+              <li>Meet <b>eveyone</b></li>
+              <li>Gain information on each teammate's knowledge</li>
+              <li><strong>Discuss meeting times</strong></li>
+            </ol>
+          </div>
+          <div id="old-business">
+            <h3>Unfinished Business From Last Meeting</h3>
+            <span> Notes: </span>
+            <span>
+              <i>Remind everyone to fill out the survey.</i>
+            </span>
+          </div>
+          <div id="new-business">
+            <h3>New Business For This Meeting</h3>
+            <textarea id="w3review" name="w3review">
+  Add Meeting Notes Here:</textarea
+            >
+          </div>
         </div>
         <hr />
         <div id="graph">
